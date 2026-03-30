@@ -1,0 +1,45 @@
+# Name of your workflow (shown in GitHub Actions tab)
+name: Simple Kotlin CI
+
+# When this workflow should run
+on:
+  # Run when you push code to the main branch
+  push:
+    branches: ["main"]
+
+  # Also run when someone creates a pull request to main
+  pull_request:
+    branches: ["main"]
+
+# A workflow is made up of jobs
+jobs:
+  # This is our single job called "test"
+  test:
+    # The machine GitHub will use (Ubuntu Linux)
+    runs-on: ubuntu-latest
+
+    # Steps are the actions that will run one after another
+    steps:
+
+      # Step 1: Download your repository code into the runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Install Java (required for Kotlin/Android builds)
+      - name: Set up Java (JDK 17)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'   # Java provider
+          java-version: '17'        # Java version
+
+      # Step 3: Give permission to run the Gradle wrapper
+      - name: Make gradlew executable
+        run: chmod +x ./android_project/gradlew
+
+      # Step 4: Run unit tests
+      - name: Run tests
+        run: ./android_project/gradlew test
+
+      # Step 5: Build the project (compile + package)
+      - name: Build project
+        run: ./android_project/gradlew build
