@@ -66,6 +66,7 @@ Prompts are generated based on the time of day providing users with opportunitie
 
 
 
+**********************************************************************************************************************************************************************************************************
 
 
 **Error handling - what is it and why it's used for the application**
