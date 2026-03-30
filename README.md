@@ -1,7 +1,7 @@
 **Introduction**
 
   
-This document presents the social spark README, a mobile application designed to create meaningful social connections throughout the day. The application developed entirely on android studio with Kotlin using if statements to implement application logic and XML for the user interface design. 
+This document presents the social spark README, a mobile application designed to create meaningful social connections throughout the day. The application is developed entirely on android studio with Kotlin using if statements to implement application logic and XML for the user interface design. 
 
 **********************************************************************************************************************************************************************************************************
 
@@ -30,7 +30,7 @@ Dark mode variant:
 
 
 
-**Visual look/design**
+**Visual look design**
 
 The users are then presented with a simple and intuitive UI that prompts an input to provide/retreive a "social spark" based on the time of day. 
 
