@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Primary Purple Palette -->
+    <color name="purple_50">#F3E5F5</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_300">#BA68C8</color>
+    <color name="purple_400">#AB47BC</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_600">#8E24AA</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="purple_800">#6A1B9A</color>
+    <color name="purple_900">#4A148C</color>
+
+    <!-- Blue Palette -->
+    <color name="blue_50">#E3F2FD</color>
+    <color name="blue_100">#BBDEFB</color>
+    <color name="blue_200">#90CAF9</color>
+    <color name="blue_300">#64B5F6</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_600">#1E88E5</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="blue_800">#1565C0</color>
+    <color name="blue_900">#0D47A1</color>
+
+    <!-- Green Palette -->
+    <color name="green_100">#C8E6C9</color>
+    <color name="green_300">#81C784</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#388E3C</color>
+    <color name="green_900">#1B5E20</color>
+
+    <!-- Red Palette -->
+    <color name="red_100">#FFCDD2</color>
+    <color name="red_300">#E57373</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="red_900">#B71C1C</color>
+
+    <!-- Orange / Warning -->
+    <color name="orange_300">#FFB74D</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="orange_700">#F57C00</color>
+
+    <!-- Greys -->
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_900">#212121</color>
+
+    <!-- Utility -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+
+    <!--  Artisan sage  & clay (theme colors) -->
+    <color name="warm_bg">#FDFCF8</color>
+    <color name="warm_accent">#5A5A40</color>
+    <color name="warm_ink">#121212</color>
+    <color name="warm_ink_muted">#662C2C2C</color>
+    <color name="warm_ink_placeholder">#4D2C2C2C</color>
+    <color name="warm_paper">#FFFFFF</color>
+    <color name="warm_terracotta">#8A6841</color>
+    <color name="warm_error">#B33939</color>
+    <color name="warm_stroke">#1A5A5A40</color>
+
+
+
+</resources>

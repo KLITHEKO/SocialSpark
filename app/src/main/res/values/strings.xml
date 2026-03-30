@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Social Sparks</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="subtitle_text">What time of day is it?</string>
+    <string name="time_hint">Enter time e.g.Morning</string>
+    <string name="time_placeholder">e.g. Morning</string>
+    <string name="find_spark_button">Find a Social Spark</string>
+    <string name="reset_button">Reset Input</string>
+    <string name="suggestion_placeholder">Suggestion goes here</string>
+    <string name="error_invalid_time">Please enter a valid time (e.g., \'morning\', \'mid-morning\', \'afternoon\', \'snack\', \'dinner\', \'night\'). You\'ve got this!</string>
+    <string name="spark_morning">Send a good morning text to a family member</string>
+    <string name="spark_mid_morning">Reach out to a colleague with a quick thank you</string>
+    <string name="spark_afternoon">Share a funny meme or interesting link with a friend</string>
+    <string name="spark_snack">Send a quick \'thinking of you\' message</string>
+    <string name="spark_dinner">Call a friend or relative for a 5-minute catch up</string>
+    <string name="spark_night">Leave a thoughtful comment on a friend\'s post</string>
+    <string name="Your_social_Spark">Your Social Spark</string>
+    <string name="error_generic">Error message</string>
+
+</resources>

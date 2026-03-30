@@ -1,0 +1,7 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SocialSpark" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+       <item name="colorPrimary">@color/warm_bg</item> -->
+    </style>
+</resources>
