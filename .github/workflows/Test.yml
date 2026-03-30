@@ -1,45 +1,42 @@
-# Name of your workflow (shown in GitHub Actions tab)
-name: Simple Kotlin CI
+name: Simple Android CI
 
-# When this workflow should run
 on:
-  # Run when you push code to the main branch
   push:
     branches: ["main"]
-
-  # Also run when someone creates a pull request to main
   pull_request:
     branches: ["main"]
 
-# A workflow is made up of jobs
 jobs:
-  # This is our single job called "test"
-  test:
-    # The machine GitHub will use (Ubuntu Linux)
+  build:
     runs-on: ubuntu-latest
 
-    # Steps are the actions that will run one after another
     steps:
-
-      # Step 1: Download your repository code into the runner
-      - name: Checkout code
+      # 1) Get your code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Install Java (required for Kotlin/Android builds)
-      - name: Set up Java (JDK 17)
+      # 2) Install Java (needed for Kotlin/Gradle)
+      - name: Set up Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'   # Java provider
-          java-version: '17'        # Java version
+          distribution: temurin
+          java-version: '17'
 
-      # Step 3: Give permission to run the Gradle wrapper
-      - name: Make gradlew executable
-        run: chmod +x ./android_project/gradlew
+      # 3) Install Android SDK so Gradle can compile SDK 36
+      - name: Install Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          api-level: 36
+          build-tools: 36.0.0
 
-      # Step 4: Run unit tests
+      # 4) Make the Gradle wrapper executable
+      - name: Grant execute permission for gradlew
+        run: chmod +x ./gradlew
+
+      # 5) Run your unit tests
       - name: Run tests
-        run: ./android_project/gradlew test
+        run: ./gradlew test
 
-      # Step 5: Build the project (compile + package)
-      - name: Build project
-        run: ./android_project/gradlew build
+      # 6) Build the app project
+      - name: Build release
+        run: ./gradlew build
