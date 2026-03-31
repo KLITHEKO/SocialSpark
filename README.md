@@ -96,6 +96,15 @@ If a user types something the app does not recognise, showError() displays a mes
 This project uses GitHub Actions to automatically test and build the Android app whenever code is pushed or a pull request is opened on the main branch. It sets up Java 17, installs the Android SDK, runs unit tests, and builds the project — ensuring the code compiles and passes tests consistently (GitHub, 2023).
 
 
+**********************************************************************************************************************************************************************************************************
+
+
+
+Video Presentation:
+
+https://drive.google.com/file/d/1wwDW6doKLDbArLh6wykcY6tEJn2qKkmk/view?usp=sharing
+
+
 ***********************************************************************************************************************************************************************************************************
 
 **References:**
