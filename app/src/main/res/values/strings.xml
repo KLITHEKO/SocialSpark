@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Social Sparks</string>
+    <string name="app_name">Social Spark</string>
     <string name="welcome_text">Welcome</string>
     <string name="subtitle_text">What time of day is it?</string>
     <string name="time_hint">Enter time e.g.Morning</string>

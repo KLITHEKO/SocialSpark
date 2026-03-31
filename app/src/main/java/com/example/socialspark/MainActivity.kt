@@ -73,12 +73,16 @@ Android Developers. (2024). findViewById. Retrieved from https://developer.andro
         tvError.visibility = View.GONE
 
         /*
-         The below is the logic using if statements.
-        A "when" statement could provide a more concise solution as suggested on Android studio, however,
-        if-else statements were used to meet the requirements of the assignment resulting in warning displayed with
-        yellow triangle for the logic
+        Although Android Studio suggests using a when statement for multiple branches because it improves readability
+        (Android Developers, 2023),
+        if/else statements were used to meet the requirements of the assignment.
+
+        Reference:
+        Google Developers. (2023, September 21). Write conditionals in Kotlin. Android Developers. Retrieved March 30, 2026,
+        from https://developer.android.com/codelabs/basic-android-kotlin-compose-conditionals
 
         */
+
         if (input == "morning") {
             showSuggestion(getString(R.string.spark_morning))
         } else if (input == "mid-morning") {
@@ -96,6 +100,19 @@ Android Developers. (2024). findViewById. Retrieved from https://developer.andro
         }
     }
 
+
+
+    /*
+
+   The below portion of the code updates TextView with
+   text and shows the suggestion card (private function)
+   (OpenAI, 2026)
+
+   Reference:
+   OpenAI. (2026). Explanation of Kotlin function
+   and Android view visibility [ChatGPT response]. https://chat.openai.com/
+
+     */
 
     private fun showSuggestion(text: String) {
         tvSuggestionText.text = text
